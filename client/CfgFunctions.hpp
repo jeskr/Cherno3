@@ -6,5 +6,6 @@
 
 class ClientDir
 {
+	class fixUniVestBug {postInit = 1; file = "client\functions\fn_fixUniVestBug.sqf";};
 	class postInit {postInit = 1; file = "client\postInit.sqf";};
 };
