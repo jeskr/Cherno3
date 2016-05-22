@@ -97,6 +97,7 @@ if (!isPlayer _unit) then
 // Find killer
 _killer = _unit call FAR_findKiller;
 _unit setVariable ["FAR_killerPrimeSuspect", _killer];
+[_unit, _killer] remoteExecCall ["A3W_fnc_registerKillScore", 2];
 
 // Injury message
 if (FAR_EnableDeathMessages && !isNil "_killer") then
