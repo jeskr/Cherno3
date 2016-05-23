@@ -7,9 +7,36 @@ if (!hasInterface) exitWith {};
 
 waitUntil {!isNull player};
 
+player createDiarySubject ["serverrules", "Server Rules"];
 player createDiarySubject ["infos", "Infos and Help"];
 player createDiarySubject ["changelog", "Changelog"];
+player createDiarySubject ["admins", "Admin List"];
 player createDiarySubject ["credits", "Credits"];
+
+player createDiaryRecord ["serverrules",
+[
+"Server Rules",
+"
+<br/> 1.   Hacking or cheating will get you banned.
+<br/> 2.   NO Glitching or Combat logging is allowed it will cause punishment up to permanent ban.
+<br/> 3.   NO blocking or building around Stores or ATM´s is allowed it will cause punishment up to permanent ban.
+<br/> 4.   NO building or staying on spawn zone. Players found here get BAN.
+<br/> 5.   NO VOIP IN GLOBAL. Use the channels or Teamspeak!
+<br/> 6.   ONLY ENGLISH or DANISH CHATTING IS ALLOWED IN GLOBAL and SIDE-CHAT.
+<br/> 7.   As Independant NO VOIP IN SIDECHAT is allowed (Writing is allowed). Use the group channels or Teamspeak!
+<br/> 8.   Using or spamming with loud\long custom sound commands will cause punishment up to permanent ban.
+<br/> 9.   Keep bad language to a minimum. If you have a problem with another player, take it to direct.
+<br/> 10.  Support your team and its objectives. DONT steal from your team mates.
+<br/> 11.  Team killing when you are in BLUFOR or OPFOR is forbidden and punishable. Play as Independent if you want to be free for all.
+<br/> 12.  Respect other players.
+<br/> 13.  Respect the administrators.
+<br/> 14.  Camping stores is allowed. Wasteland is a HARSH survival map. Learn to deal with it and go on your way.
+<br/> 15.  Bank Balances/Lost stuff etc. are non-refundable.
+<br/> 16.  High builded bases are NOT allowed (Too OP), they will be deleted.
+<br/> 17.  Disconnecting while being High Value Target will result in punishment/BAN.
+<br/> 18.  NO offending playernames is allowed.
+"
+]];
 
 player createDiaryRecord ["changelog",
 [
@@ -385,5 +412,27 @@ player createDiaryRecord ["infos",
 <br/>
 <br/>Q. I saw someone breaking a rule, what do I do?
 <br/>A. Simply go into global chat and get the attention of one of the admins or visit our forums, and make a report if the offense is serious.
+"
+]];
+
+player createDiaryRecord ["admins",
+[
+"Admin List",
+"
+<br/><font color='#00FFEF' size='18'>Super Admins</font>
+<br/><font color='#00FFEF' size='12'>All Functions Activated</font>
+<br/> * Jes
+
+<br/><font color='#0066FF' size='18'>High Admins</font>
+<br/><font color='#00FFEF' size='12'>Teleport, Spectate, Slay Delete Hacked objects</font>
+
+<br/><font color='#002FFF' size='18'>Low Admins</font>
+<br/><font color='#00FFEF' size='12'>Spectate, Slay, Delete Hacked Objects</font>
+<br/> * VukDK
+<br/> * Jakob SIM
+<br/> * Rambo_BD
+<br/> * Skovbyy
+<br/> * Nessius
+<br/> * Martin
 "
 ]];
